@@ -1,3 +1,8 @@
+/* =============================================
+   Creed Thoughts - www.creedthoughts.gov.www\creedthoughts
+   CSS Clone
+   ============================================= */
+
 :root {
   --teal: #7ec8c8;
   --teal-dark: #5ab0b0;
@@ -17,7 +22,9 @@
   --max-width: 1300px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,6 +41,10 @@ body {
   color: var(--text-dark);
   min-height: 100vh;
 }
+
+/* =============================================
+   HEADER
+   ============================================= */
 
 .site-header {
   background-color: var(--white);
@@ -85,7 +96,7 @@ body {
   height: 90px;
   width: auto;
   object-fit: cover;
-  object-position: top center;
+  object-position:center;
   display: block;
 }
 
@@ -120,6 +131,9 @@ body {
   background-color: var(--nav-blue-dark);
 }
 
+/* =============================================
+   LAYOUT
+   ============================================= */
 
 .site-wrapper {
   max-width: var(--max-width);
@@ -131,7 +145,9 @@ body {
   min-height: calc(100vh - 140px);
 }
 
-
+/* =============================================
+   MAIN CONTENT
+   ============================================= */
 
 .main-content {
   padding: 36px 50px 60px 50px;
@@ -199,6 +215,9 @@ body {
   text-decoration: underline;
 }
 
+/* =============================================
+   PAGINATION
+   ============================================= */
 
 .pagination {
   display: flex;
@@ -402,6 +421,9 @@ body {
   background-color: #b0b0b0;
 }
 
+/* =============================================
+   RESPONSIVE
+   ============================================= */
 
 @media (max-width: 900px) {
   .site-wrapper {

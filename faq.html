@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Creed Thoughts Premium</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Glass Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-branding">
+                <a href="index.html" class="site-title">Creed Thoughts</a>
+                <p class="site-tagline">www.creedthoughts.gov.www\creedthoughts</p>
+            </div>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-user-badge">
+                <img src="creed.png" alt="Creed Bratton" class="creed-photo" />
+                <span class="user-name">Creed</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="site-wrapper">
+        <main class="main-content">
+            <div class="faq-content">
+                <h1>Frequently Asked Questions (Classified)</h1>
+
+                <div class="faq-item">
+                    <p class="faq-question">What is Creed Thoughts?</p>
+                    <p class="faq-answer">In Season 3 Episode 24 - "The Job," Ryan creates a blog for Creed on The
+                        Office. Though initially it was a word document, it was later turned into a real blog with
+                        Creed's thoughts written in character by the show's writers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">Who is Creed Bratton?</p>
+          <p class="faq-answer">Creed Bratton is a fictional character in The Office (US), played by the real-life musician Creed Bratton. He works in Quality Assurance at Dunder Mifflin Paper Company in Scranton, Pennsylvania, though no one is entirely sure what he actually does. He is known for his mysterious past and bizarre non-sequiturs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">Is this a real government website?</p>
+          <p class="faq-answer">The URL "www.creedthoughts.gov.www\creedthoughts" is a reference to Ryan's comically incorrect understanding of how web addresses work when he set up the blog. It is not actually a government website. Do not attempt to contact any government agencies about this blog.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">Who writes the posts?</p>
+          <p class="faq-answer">The posts were written in character by the writers of The Office. They capture Creed's distinct voice — rambling, obliquely menacing, and full of casual references to a deeply suspicious past.</p>
+                </div>
+
+        <div class="faq-item">
+          <p class="faq-question">How many blog posts are there?</p>
+          <p class="faq-answer">There are 7 pages worth of posts spanning from May 2007 through August 2008, documenting Creed's thoughts during and around the run of The Office Season 3 and beyond.</p>
+        </div>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+      <h3 class="sidebar-title">Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#">August, 2008</a></li>
+                    <li><a href="#">July, 2008</a></li>
+                    <li><a href="#">June, 2008</a></li>
+                    <li><a href="#">May, 2008</a></li>
+                    <li><a href="#">April, 2008</a></li>
+                    <li><a href="#">March, 2008</a></li>
+        <li><a href="#">February, 2008</a></li>
+        <li><a href="#">January, 2008</a></li>
+        <li><a href="#">December, 2007</a></li>
+        <li><a href="#">November, 2007</a></li>
+        <li><a href="#">October, 2007</a></li>
+        <li><a href="#">September, 2007</a></li>
+        <li><a href="#">August, 2007</a></li>
+        <li><a href="#">July, 2007</a></li>
+        <li><a href="#">June, 2007</a></li>
+        <li><a href="#">May, 2007</a></li>
+                </ul>
+        </aside>
+    </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8963;</button>
+
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>

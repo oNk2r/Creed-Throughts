@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creed Thoughts | Premium Edition</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Glass Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-branding">
+                <a href="index.html" class="site-title">Creed Thoughts</a>
+                <p class="site-tagline">www.creedthoughts.gov.www\creedthoughts</p>
+            </div>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-user-badge">
+                <img src="creed.png" alt="Creed Bratton" class="creed-photo" />
+                <span class="user-name">Creed</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="site-wrapper">
+        <main class="main-content">
+            <div class="single-post-content" id="postContent">
+                <a href="index.html" class="back-link">← Back to Overview</a>
+                <p style="color: var(--text-secondary);">Decrypting post data…</p>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Archives <span>📁</span></h3>
+                <ul class="category-list">
+                    <li><a href="#">August, 2008</a></li>
+                    <li><a href="#">July, 2008</a></li>
+                    <li><a href="#">June, 2008</a></li>
+                    <li><a href="#">May, 2008</a></li>
+                    <li><a href="#">April, 2008</a></li>
+                    <li><a href="#">March, 2008</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">About <span>🔒</span></h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                    These thoughts are classified. Do not attempt to contact any government agencies about this blog. If
+                    you read something you don't like, pretend you never saw it.
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="posts.js"></script>
+    <script>
+        // Load post from slug
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+        const container = document.getElementById('postContent');
+
+        if (slug && POSTS && POSTS[slug]) {
+            const post = POSTS[slug];
+            document.title = post.title + ' - Creed Thoughts';
+            container.innerHTML = `
+        <a href="index.html" class="back-link">← Retreat</a>
+        <h1>${post.title}</h1>
+        ${post.body.map(p => `<p>${p}</p>`).join('')}
+      `;
+        } else {
+            container.innerHTML = `
+        <a href="index.html" class="back-link">← Back</a>
+        <h1>File Not Found [404]</h1>
+        <p>This record does not exist or has been expunged.</p>
+      `;
+        }
+    </script>
+</body>
+
+</html>
