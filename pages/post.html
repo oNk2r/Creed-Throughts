@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creed Thoughts | Premium Edition</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Creed Thoughts</title>
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
@@ -14,29 +14,27 @@
     <header class="site-header">
         <div class="header-inner">
             <div class="header-branding">
-                <a href="index.html" class="site-title">Creed Thoughts</a>
+                <a href="../index.html" class="site-title">Creed Thoughts</a>
                 <p class="site-tagline">www.creedthoughts.gov.www\creedthoughts</p>
             </div>
-
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-user-badge">
-                <img src="creed.png" alt="Creed Bratton" class="creed-photo" />
-                <span class="user-name">Creed</span>
+            <div class="header-photo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBi_mwx5VexUNN3VsLw7Dg8yQI8kNrXgOaYA&s"
+                    alt="Creed Bratton" class="creed-photo" />
             </div>
         </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Layout -->
     <div class="site-wrapper">
         <main class="main-content">
             <div class="single-post-content" id="postContent">
-                <a href="index.html" class="back-link">← Back to Overview</a>
+                <a href="../index.html" class="back-link">← Back to Overview</a>
                 <p style="color: var(--text-secondary);">Decrypting post data…</p>
             </div>
         </main>
@@ -64,7 +62,7 @@
         </aside>
     </div>
 
-    <script src="posts.js"></script>
+    <script src="../data/posts.js"></script>
     <script>
         // Load post from slug
         const params = new URLSearchParams(window.location.search);
@@ -75,13 +73,13 @@
             const post = POSTS[slug];
             document.title = post.title + ' - Creed Thoughts';
             container.innerHTML = `
-        <a href="index.html" class="back-link">← Retreat</a>
+        <a href="../index.html" class="back-link">← Retreat</a>
         <h1>${post.title}</h1>
         ${post.body.map(p => `<p>${p}</p>`).join('')}
       `;
         } else {
             container.innerHTML = `
-        <a href="index.html" class="back-link">← Back</a>
+        <a href="../index.html" class="back-link">← Back</a>
         <h1>File Not Found [404]</h1>
         <p>This record does not exist or has been expunged.</p>
       `;

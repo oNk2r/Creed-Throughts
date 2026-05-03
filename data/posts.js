@@ -1,6 +1,3 @@
-// Creed Thoughts - Blog Post Data
-// Based on creedthoughtsgov.com (The Office Season 3 blog)
-
 const POSTS = {
   "august-28-2008": {
     title: "August 28, 2008",

@@ -1,8 +1,3 @@
-/* =============================================
-   Creed Thoughts - www.creedthoughts.gov.www\creedthoughts
-   CSS Clone
-   ============================================= */
-
 :root {
   --teal: #7ec8c8;
   --teal-dark: #5ab0b0;
@@ -42,10 +37,6 @@ body {
   min-height: 100vh;
 }
 
-/* =============================================
-   HEADER
-   ============================================= */
-
 .site-header {
   background-color: var(--white);
   border-bottom: 1px solid var(--border-light);
@@ -55,9 +46,9 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 18px 40px 14px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: end;
 }
 
 .header-branding {
@@ -95,7 +86,7 @@ body {
 .creed-photo {
   height: 90px;
   width: auto;
-  object-fit: cover;
+  object-fit:cover;
   object-position:center;
   display: block;
 }
@@ -131,10 +122,6 @@ body {
   background-color: var(--nav-blue-dark);
 }
 
-/* =============================================
-   LAYOUT
-   ============================================= */
-
 .site-wrapper {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -145,9 +132,6 @@ body {
   min-height: calc(100vh - 140px);
 }
 
-/* =============================================
-   MAIN CONTENT
-   ============================================= */
 
 .main-content {
   padding: 36px 50px 60px 50px;
@@ -167,7 +151,6 @@ body {
   line-height: 1.6;
 }
 
-/* Blog posts */
 .post {
   padding: 30px 0;
   border-bottom: 1px solid var(--border-light);
@@ -215,10 +198,6 @@ body {
   text-decoration: underline;
 }
 
-/* =============================================
-   PAGINATION
-   ============================================= */
-
 .pagination {
   display: flex;
   align-items: center;
@@ -263,10 +242,6 @@ body {
   background: none;
   color: var(--text-muted);
 }
-
-/* =============================================
-   SIDEBAR
-   ============================================= */
 
 .sidebar {
   padding: 36px 30px 60px 30px;
@@ -314,10 +289,6 @@ body {
   text-decoration: underline;
 }
 
-/* =============================================
-   SINGLE POST PAGE
-   ============================================= */
-
 .single-post-content {
   padding: 40px 50px 60px 50px;
 }
@@ -352,10 +323,6 @@ body {
   text-decoration: underline;
 }
 
-/* =============================================
-   FAQ PAGE
-   ============================================= */
-
 .faq-content {
   padding: 40px 50px 60px 50px;
 }
@@ -387,9 +354,6 @@ body {
   line-height: 1.7;
 }
 
-/* =============================================
-   BACK TO TOP BUTTON
-   ============================================= */
 
 .back-to-top {
   position: fixed;
@@ -420,10 +384,6 @@ body {
 .back-to-top:hover {
   background-color: #b0b0b0;
 }
-
-/* =============================================
-   RESPONSIVE
-   ============================================= */
 
 @media (max-width: 900px) {
   .site-wrapper {
